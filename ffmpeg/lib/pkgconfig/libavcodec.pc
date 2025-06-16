@@ -1,0 +1,14 @@
+prefix=/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/ffmpeg/lib
+includedir=/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/ffmpeg/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 60.3.100
+Requires: 
+Requires.private: libswresample >= 4.10.100, libavutil >= 58.2.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -landroid -landroid -landroid -landroid -landroid -pthread -lm -latomic -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/dav1d/lib -ldav1d -pthread -lsnappy -lstdc++ -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/libaom/lib -laom -lm -lilbc -pthread -lmp3lame -lm -lopencore-amrnb -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/opus/lib -lopus -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/shine/lib -lm -lshine -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/speex/lib -lspeex -ltheoraenc -ltheoradec -logg -ltwolame -lvo-amrwbenc -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/libvorbis/lib -lvorbis -lm -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/libogg/lib -logg -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/libvorbis/lib -lvorbisenc -lvorbis -lm -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/libogg/lib -logg -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/x264/lib -lx264 -lm -ldl -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/x265/lib -lx265 -lxvidcore -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/openh264/lib -lopenh264 -lstdc++ -L/home/kairunhanjun/Documents/Pi/ffmpeg-kit/prebuilt/android-arm/kvazaar/lib -lkvazaar
+Cflags: -I${includedir}
